@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {taskmanagerviewcomponent} from './pages/task-manager-view/task-manager-view.component';
+import {TaskManagerViewComponent} from './pages/task-manager-view/task-manager-view.component';
 
 
 const routes: Routes = [
-  {path: '', component: taskmanagerviewcomponent}
+  {path: '', component: TaskManagerViewComponent}
 
 
 ];
