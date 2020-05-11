@@ -1,0 +1,31 @@
+// global styling for all webpages will go here
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+//Colours for webpage
+$aqua:#7FFFD4;
+$azure:#F0FFFF;
+
+//update the bulma
+$family-sans-serif: "inconsolata", sans-serif;
+
+$myPrimarayColour: $aqua;
+
+$secondcolour: $azure
+
+//updating components
+
+$control-border-width : 5px;
+$input-border-color: transparent;
+$input-shadown: none;
+
+//More Styling For the whole app
+html{
+  background: linear-gradient:
+
+}
+
+html, body{
+  height:70%;
+
+}
