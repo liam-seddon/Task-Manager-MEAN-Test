@@ -12,10 +12,12 @@ app.use(bodyParser.json());
 
 //to get lists from database
 app.get('/lists', (req, res) => {
-  List.find({}).then(lists) =>{
-    res.send(lists;)
+  List.find().then((lists) =>{
+    res.send(lists);
 
-  };
+  }).catch((e) => {
+    res.send(e);
+  });
 
 })
 
@@ -26,7 +28,7 @@ app.post('/lists', (req, res) => {
   let newList = new List({
     title
   });
-  newList.save().then(listDoc) => {
+  newList.save().then((listDoc) => {
     res.send(listDoc)
   })
 
