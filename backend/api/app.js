@@ -1,6 +1,10 @@
 const express = require('express');
 const app =express();
 
+//Mongoose Models
+const {List} = require('.databse/models/list.model');
+
+
 //to get lists from database
 app.get('/lists', (req, res) => {
 
